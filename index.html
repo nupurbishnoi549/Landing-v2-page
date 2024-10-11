@@ -33,6 +33,22 @@
     <meta property="twitter:image" content="/meta-tag.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    screens: {
+                        sm: '576px',
+                        md: '724px',
+                        lg: '984px',
+                        xl: '1140',
+                        '2xl': '1440px',
+                    },
+                },
+            }
+        }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -787,6 +803,16 @@
                     <a href="https://www.cricbuzz.com/" target="_blank"><img src="./assets/image/svg/cb.svg" alt=""></a>
                 </div>
             </div>
+        </div>
+        <div
+            class="top-btn w-14 h-14 rounded-full fixed bottom-7 right-7 bg-blue-900 z-20 p-2 cursor-pointer flex justify-center items-center transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="white" class="bi bi-chevron-double-up"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                <path fill-rule="evenodd"
+                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+            </svg>
         </div>
     </section>
 

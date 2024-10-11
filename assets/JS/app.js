@@ -102,3 +102,19 @@ $('.slick').slick({
         }
     ]
 });
+// ----------top bottom scroll---------//
+const mybutton = document.querySelector(".top-btn");
+const show = document.querySelector(".active")
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+        mybutton.classList.add("active")
+    }
+    else {
+        mybutton.classList.remove("active")
+    }
+})
+mybutton.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
+
+});
