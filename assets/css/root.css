@@ -1,0 +1,21 @@
+:root {
+    --white: #FAF9F6;
+    --gray: #7D889E;
+    --blue: #3B5998;
+}
+.color-blue {
+    color: var(--blue);
+}
+.bg-blue {
+    background: var(--blue);
+}
+.color-gray {
+    color: var(--gray);
+}
+.bg-light-white{
+    background: var(--white);
+}
+
+.color-light-white {
+    color: var(--white);
+}

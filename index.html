@@ -4,18 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/image/webp/favicon-icon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Primary Meta Tags -->
     <title>Landing v2</title>
+    <!-- Primary Meta Tags -->
     <meta name="title" content="Landing v2" />
     <meta name="description" content="The Most Powerful Offline Lead Conversion Data for your Business." />
 
@@ -34,6 +24,17 @@
     <meta property="twitter:image" content="/meta-tag.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/image/svg/security.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script>
         tailwind.config = {
             theme: {
@@ -60,22 +61,38 @@
             class="2xl:max-w-[1440px] xl:max-w-[1240px] lg:max-w-[896px] md:max-w-[660px] sm:block hidden -z-10 absolute right-0 top-0">
             <img src="./assets/image/webp/hero-sec-bg-img.webp" alt="hero-sec-bg-img">
         </div>
-        <div class="container max-w-[1485px] mx-auto">
-            <div class="flex justify-between md:pt-20 pt-12">
-                <a href="#" class="max-w-[200px] max-sm:max-w-[170px]">
-                    <img src="./assets/image/webp/hero-sec-logo.webp" alt="hero-sec-logo"></a>
-                <div class="flex gap-14 items-center max-sm:flex-col max-sm:gap-2">
-                    <a href="" class="font-normal text-sm leading-4">Login or Register</a>
-                    <button class="font-normal text-sm py-3 px-5 bg-[#3B5998] rounded-[60px] text-white">Start Free
-                        Trial</button>
+        <div class="container px-3 mx-auto">
+            <nav
+                class="flex max-xl:top-0 justify-center overflow-hidden mx-auto z-40 top-[65px] w-full left-0 px-4 pt-4 items-center ">
+                <div class="max-w-[1440px] mx-auto items-center flex w-full justify-between ">
+                    <a href="#" class="max-w-[200px] max-sm:max-w-[170px] object-contain">
+                        <img src="./assets/image/webp/hero-sec-logo.webp" alt="hero-sec-logo"></a>
+                    <div onclick="navmenu()" class="sm:hidden overflow-hidden size-4 flex flex-col gap-1 max-sm:z-50 ">
+                        <span id="nav-line-out-side" class="w-full flex h-0.5 bg-black rounded "></span>
+                        <span id="nav-line"
+                            class="w-full h-0.5 bg-black transition-all relative after:w-full after:absolute after:rounded-md after:transition-all after:duration-300 after:h-full after:left-0 after:bg-black duration-300 rounded-md"></span>
+                        <span id="nav-line-out-side-1" class="w-full flex h-0.5 bg-black rounded "></span>
+                    </div>
+                    <div id="mobile-view"
+                        class="flex max-sm:fixed max-sm:w-full max-sm:h-1/2 max-sm:left-0 max-sm:-top-full max-sm:flex max-sm:justify-center max-sm:items-center max-sm:flex-col max-sm:bg-white max-sm:gap-6 gap-12">
+                        <div class="flex gap-14 items-center max-sm:flex-col max-sm:gap-2">
+                            <a href="" class="font-normal text-sm leading-4">Login or Register</a>
+                            <button
+                                class="font-semibold w-[139px] h-[40px] text-sm py-3 px-5 bg-blue rounded-[60px] text-white">Start
+                                Free
+                                Trial</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </nav>
+        </div>
+        <div class="container max-w-[1485px] mx-auto">
             <h2
                 class="xl:text-[80px] lg:text-6xl text-3xl md:text-4xl font-bold text-center max-w-[1317px] mx-auto lg:pt-[70px] pt-8 leading-[38px] lg:leading-[55px] md:leading-[40px] xl:leading-[95px]">
                 The Most Powerful
                 Offline Lead Conversion Data for your <span class="text-white max-sm:text-gray-500">Business.</span>
             </h2>
-            <p class="font-normal text-xl text-center max-w-[464px] text-white mx-auto pt-4 max-sm:text-gray-500">
+            <p class="font-normal text-xl text-center max-w-[474px] text-white mx-auto pt-4 max-sm:text-gray-500">
                 Seamless integration with
                 your CRM and Facebook</p>
             <input type="email" placeholder="Enter you work email" id="email"
@@ -94,32 +111,32 @@
     </section>
 
     <!---------------------revenue grow---------------->
-    <section class="max-w-[1920px] mx-auto px-4 xl:pt-48 lg:pt-32 md:pt-14 pt-14">
+    <section class="max-w-[1920px] mx-auto px-3 xl:pt-48 lg:pt-32 md:pt-14 pt-14 ">
         <div class="container max-w-[1297px] mx-auto">
             <h2
-                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl leading-tight md:leading-[75px] text-center font-bold text-black max-w-[790px] mx-auto pb-8">
-                Marketing
-                analytics that REALLY matter</h2>
+                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl leading-tight md:leading-[76px] text-center font-bold text-black max-w-[1010px] mx-auto pb-8">
+                See your revenue grow in real
+                time with our dashboards.</h2>
             <div class="tab-card relative">
                 <div
                     class="absolute w-[85px] 2xl:bottom-[-9%] lg:bottom-[-8%] sm:bottom-[-8%] md:bottom-[-6%] xl:left-[-3%] lg:left-[-3%] md:left-[-4%] left-[-8%] bottom-[-3%]">
                     <img src="./assets/image/webp/bottom-arrow-img.webp" alt="bottom-arrow">
                 </div>
                 <div
-                    class="absolute max-w-[85px] xl:top-[9%] lg:top-[19%] sm:top-[26%] top-[18%] md:top-[17%]  xl:right-[-3%] -z-10 lg:right-[-1%] md:right-[-2%] right-[-3%]">
+                    class="absolute max-w-[85px] xl:top-[9%] lg:top-[19%] sm:top-[26%] top-[18%] md:top-[17%] xl:right-[-3%] -z-10 lg:right-[-1%] md:right-[-2%] right-[-3%]">
                     <img src="./assets/image/webp/top-arrow-img.webp" alt="top-right">
                 </div>
                 <div class="nav-tabs gap-4 flex mx-auto mb-8 flex-wrap justify-center">
-                    <div class="tab text-[20px] font-medium whitespace-nowrap py-5 border-2 border-gray-400 px-8 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab text-[20px] font-medium whitespace-nowrap py-5 border-2 border-gray-400 px-8 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab1">CRM
                         Integrations</div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab2">Marketing
                         Platform Integrations</div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-7 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-7 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab3">Analytics
                     </div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab4">Easy, Safe
                         and Secured</div>
                 </div>
@@ -161,7 +178,7 @@
                                 nulla pariatur.</p>
                         </div>
                     </div>
-                    <div id="tab2" class="content  pt-22">
+                    <div id="tab2" class="content pt-22">
                         <div class="flex gap-5 pb-6 items-start">
                             <img src="./assets/image/svg/tick.svg" alt="tick">
                             <p>Ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -297,16 +314,16 @@
                     <img src="assets/image/webp/arrow.webp" alt="arrow">
                 </div>
                 <div class="nav-tabs gap-4 flex mx-auto mb-9 flex-wrap justify-center">
-                    <div class="tab text-[20px] font-medium whitespace-nowrap py-5 border-2 border-gray-400 px-8 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab text-[22px] font-bold whitespace-nowrap py-5 border-2 border-gray-400 px-8 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab5">Spending</div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-7 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-bold whitespace-nowrap border-2 border-gray-400 px-7 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab6">Reach</div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-bold whitespace-nowrap border-2 border-gray-400 px-6 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab7">Revenue
                     </div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-[22px] leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-bold whitespace-nowrap border-2 border-gray-400 px-[22px] leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab8">Inbound Leads</div>
-                    <div class="tab py-4 text-[20px] font-medium whitespace-nowrap border-2 border-gray-400 px-6 leading-5 bg-[#D9D9D9] rounded-[60px] text-gray-400"
+                    <div class="tab py-4 text-[20px] font-bold whitespace-nowrap border-2 border-gray-400 px-6 leading-5 color-light-white rounded-[60px] text-gray-400"
                         data-target="tab9">Campaigns
                     </div>
                 </div>
@@ -336,7 +353,7 @@
                                 explicabo.</p>
                         </div>
                     </div>
-                    <div id="tab6" class="content  pt-22">
+                    <div id="tab6" class="content pt-22">
                         <div class="flex gap-5 pb-6 items-start">
                             <img src="./assets/image/svg/tick.svg" alt="tick">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -445,41 +462,41 @@
     <section class="flex justify-center xl:pb-36 md:pb-16 pb-12 px-3">
         <div class="container max-w-[1719px] mx-auto">
             <h2
-                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl leading-tight md:leading-[75px] text-center font-bold text-black max-w-[1001px] mx-auto md:pb-4 lg:pb-16 pb-5">
+                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl leading-tight md:leading-[75px] text-center font-bold text-black mx-auto md:pb-4 lg:pb-16 pb-5">
                 How
-                <span class="text-[#3B5998]">Main Campaign</span> Sync Works
+                <span class="color-blue">Main Campaign</span> Sync Works
             </h2>
             <div class="flex gap-5 flex-wrap justify-center">
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-5 rounded-3xl max-w-[327px] h-[197px] custom-card">
-                    <p class="flex justify-center text-[#3B5998] text-center text-2xl font-bold leading-7">
+                    <p class="flex justify-center color-blue text-center text-2xl font-bold leading-7">
                         Step #1</p>
-                    <p class="max-w-[286px] text-center pt-3 pb-14 text-[#7D889E] font-medium leading-6 text-base">
+                    <p class="max-w-[286px] text-center pt-3 pb-14 color-gray font-medium leading-6 text-base">
                         Facebook user fills out your Facebook ad’s instant lead form</p>
                 </div>
                 <div
                     class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-5 rounded-3xl max-w-[327px] h-[197px] custom-card1">
-                    <p class="flex justify-center text-[#3B5998] text-center text-2xl font-bold leading-7">
+                    <p class="flex justify-center color-blue text-center text-2xl font-bold leading-7">
                         Step #2</p>
-                    <p class="max-w-[286px] text-center pt-3 pb-14 text-[#7D889E] font-medium leading-6 text-base">
+                    <p class="max-w-[286px] text-center pt-3 pb-14 color-gray font-medium leading-6 text-base">
                         Main Campaign automatically syncs inbound Facebook leads to sales CRM </p>
                 </div>
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-5 rounded-3xl max-w-[327px] h-[197px] custom-card">
-                    <p class="flex justify-center text-[#3B5998] text-center text-2xl font-bold leading-7">
+                    <p class="flex justify-center color-blue text-center text-2xl font-bold leading-7">
                         Step #3</p>
-                    <p class="max-w-[286px] text-center pt-3 pb-14 text-[#7D889E] font-medium leading-6 text-base">
+                    <p class="max-w-[286px] text-center pt-3 pb-14 color-gray font-medium leading-6 text-base">
                         Lead makes a purchase in an offline setting (example; In person)</p>
                 </div>
                 <div
                     class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-5 rounded-3xl max-w-[327px] h-[197px] custom-card1">
-                    <p class="flex justify-center text-[#3B5998] text-center text-2xl font-bold leading-7">
+                    <p class="flex justify-center color-blue text-center text-2xl font-bold leading-7">
                         Step #4</p>
-                    <p class="max-w-[286px] text-center pt-3 pb-14 text-[#7D889E] font-medium leading-6 text-base">
+                    <p class="max-w-[286px] text-center pt-3 pb-14 color-gray font-medium leading-6 text-base">
                         Sales team updates sales CRM with the Lead’s purchase revenue</p>
                 </div>
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-5 rounded-3xl max-w-[327px] h-[197px] custom-card">
-                    <p class="flex justify-center text-[#3B5998] text-center text-2xl font-bold leading-7">
+                    <p class="flex justify-center color-blue text-center text-2xl font-bold leading-7">
                         Step #5</p>
-                    <p class="text-center pt-3 pb-14 text-[#7D889E] font-medium leading-6 text-base">
+                    <p class="text-center pt-3 pb-14 color-gray font-medium leading-6 text-base">
                         Main Campaign attributes Lead’s purchase revenue to Facebook marketing campaigns. Now you know
                         exactly which campaigns
                         are driving purchases for your business </p>
@@ -493,7 +510,7 @@
         <div class="container">
             <h2
                 class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl md:leading-10 lg:leading-tight text-center font-bold text-black max-w-[1001px] mx-auto lg:pb-6 md:pb-0">
-                Understand how many sales are driven from your campaigns</h2>
+                Understand <span class="color-blue">how many sales</span> are driven from your campaigns</h2>
             <div class="flex flex-wrap justify-center">
                 <div class="lg:w-6/12">
                     <p class="xl:pt-24 lg:pt-16 pt-9 pb-5 max-lg:text-center max-w-[509px]">The issue with tracking
@@ -513,7 +530,7 @@
                         directly.</p>
                     <div class="flex max-lg:justify-center max-sm:flex-col max-sm:gap-3">
                         <button
-                            class="font-bold leading-7 text-xl py-3 px-6 bg-[#3B5998] rounded-[60px] text-white mr-4">
+                            class="font-bold leading-7 text-xl py-3 px-6 shadow-[0px_10px_30px_0px_#00000026] bg-blue rounded-[60px] text-white mr-4">
                             Get Started</button>
                         <div class="flex-col">
                             <h2 class="text-lg font-bold leading-7 text-[#14142B] max-sm:justify-center max-sm:flex">
@@ -531,41 +548,41 @@
     </section>
 
     <!------------------Privacy Matters------------------>
-    <section class="flex justify-center xl:pb-36 md:pb-16 pb-12">
+    <section class="flex justify-center xl:pb-36 md:pb-16 pb-12 px-3">
         <div class="container max-w-[1573px] mx-auto">
             <h2
                 class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl md:leading-10 lg:leading-tight text-center font-bold text-black max-w-[1333px] xl:pb-20 lg:pb-8 md:pb-10 pb-5 mx-auto">
-                With Main Campaign,<span class="text-[#3B5998]"> Your Privacy Matters</span></h2>
+                With Main Campaign,<span class="color-blue"> Your Privacy Matters</span></h2>
             <div class="flex xl:gap-14 lg:gap-10 md:gap-8 gap-10 flex-wrap justify-center">
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-6 rounded-3xl w-[351px] h-[312px]">
                     <img src="./assets/image/svg/sharing.svg" alt="sharing" class="max-w-[80px] mx-auto">
-                    <p class="flex justify-center text-[#3B5998] text-center text-xl font-bold leading-7 pt-5">
+                    <p class="flex justify-center color-blue text-center text-xl font-bold leading-7 pt-5">
                         No Sharing</p>
-                    <p class="max-w-[264px] text-center pt-5 pb-14 text-[#7D889E] font-medium leading-6 text-lg">
+                    <p class="max-w-[264px] text-center pt-5 pb-14 color-gray font-medium leading-6 text-lg">
                         We Keep your information secure. We will never share any lead data to other companies.</p>
                 </div>
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-6 rounded-3xl w-[351px] h-[312px]">
                     <img src="./assets/image/svg/complaint.svg" alt="sharing" class="max-w-[80px] mx-auto">
                     <p
-                        class="flex justify-center text-[#3B5998] text-center max-w-[308px] text-xl font-bold leading-7 pt-5">
+                        class="flex justify-center color-blue text-center max-w-[308px] text-xl font-bold leading-7 pt-5">
                         GDPR, CCPA, PCI, Facebook, Google compliant</p>
-                    <p class="max-w-[299px] text-center pt-5 pb-14 text-[#7D889E] font-medium leading-6 text-lg">
+                    <p class="max-w-[299px] text-center pt-5 pb-14 color-gray font-medium leading-6 text-lg">
                         Big Companies choose to work with us for a reason. Get a trusted partner that puts your security
                         first.</p>
                 </div>
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-6 rounded-3xl w-[351px] h-[312px]">
                     <img src="./assets/image/svg/security.svg" alt="sharing" class="max-w-[80px] mx-auto">
-                    <p class="flex justify-center text-[#3B5998] text-center text-xl font-bold leading-7 pt-5">
+                    <p class="flex justify-center color-blue text-center text-xl font-bold leading-7 pt-5">
                         Advanced Security</p>
-                    <p class="max-w-[299px] text-center pt-5 pb-14 text-[#7D889E] font-medium leading-6 text-lg">
+                    <p class="max-w-[299px] text-center pt-5 pb-14 color-gray font-medium leading-6 text-lg">
                         Laser-targeted segmentation, Local store distribution, automation rules and filters, and more.
                         We put security first.</p>
                 </div>
                 <div class="shadow-[0px_14px_30.5px_0px_#1B33531F] p-6 rounded-3xl w-[351px] h-[312px]">
                     <img src="./assets/image/svg/marketing.svg" alt="sharing" class="max-w-[80px] mx-auto">
-                    <p class="flex justify-center text-[#3B5998] text-center text-xl font-bold leading-7 pt-5">
+                    <p class="flex justify-center color-blue text-center text-xl font-bold leading-7 pt-5">
                         Conset-based Marketing</p>
-                    <p class="max-w-[299px] text-center pt-5 pb-14 text-[#7D889E] font-medium leading-6 text-lg">
+                    <p class="max-w-[299px] text-center pt-5 pb-14 color-gray font-medium leading-6 text-lg">
                         Making conset-based marketing the most scalable, efficient, and safest method for customer
                         acquistion.</p>
                 </div>
@@ -574,10 +591,10 @@
     </section>
 
     <!------------------Businesses------------------>
-    <section id="business" class="flex justify-center xl:pb-12 pb-10 overflow-hidden">
+    <section id="business" class="flex justify-center xl:pb-12 pb-10 overflow-hidden px-3">
         <div class="container max-w-[1490px] mx-auto">
             <h2
-                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl md:leading-10 lg:leading-tight text-center font-bold text-black max-w-[872px] xl:pb-20 pb-11 mx-auto">
+                class="xl:text-[65px] md:text-4xl text-3xl lg:text-5xl md:leading-10 lg:leading-tight text-center font-bold text-black max-w-[888px] xl:pb-20 pb-11 mx-auto">
                 Businesses generate more
                 revenue with Main Campaign</h2>
             <div class="flex gap-12 slider w-full">
@@ -605,7 +622,7 @@
                     <div class="border-[1px] mt-7"></div>
                     <div class="flex justify-center pt-7">
                         <button
-                            class="font-bold text-sm leading-4 py-[10px] px-[50px] bg-[#3B5998] rounded-[60px] text-white mr-4">
+                            class="font-bold text-sm leading-4 py-[10px] px-[50px] shadow-[0px_10px_20px_0px_#00000026] bg-blue rounded-[60px] text-white mr-4">
                             Read more</button>
                     </div>
                 </div>
@@ -633,7 +650,7 @@
                     <div class="border-[1px] mt-7"></div>
                     <div class="flex justify-center pt-7">
                         <button
-                            class="font-bold text-sm leading-4 py-[10px] px-[50px] bg-[#3B5998] rounded-[60px] text-white mr-4">
+                            class="font-bold text-sm leading-4 py-[10px] px-[50px] shadow-[0px_10px_20px_0px_#00000026] bg-blue rounded-[60px] text-white mr-4">
                             Read more</button>
                     </div>
                 </div>
@@ -660,7 +677,7 @@
                     <div class="border-[1px] mt-7"></div>
                     <div class="flex justify-center pt-7">
                         <button
-                            class="font-bold text-sm leading-4 py-[10px] px-[50px] bg-[#3B5998] rounded-[60px] text-white mr-4">
+                            class="font-bold text-sm leading-4 py-[10px] px-[50px] shadow-[0px_10px_20px_0px_#00000026] bg-blue rounded-[60px] text-white mr-4">
                             Read more</button>
                     </div>
                 </div>
@@ -687,7 +704,7 @@
                     <div class="border-[1px] mt-7"></div>
                     <div class="flex justify-center pt-7">
                         <button
-                            class="font-bold text-sm leading-4 py-[10px] px-[50px] bg-[#3B5998] rounded-[60px] text-white mr-4">
+                            class="font-bold text-sm leading-4 py-[10px] px-[50px] bg-blue rounded-[60px] text-white mr-4">
                             Read more</button>
                     </div>
                 </div>
@@ -697,7 +714,7 @@
     </section>
 
     <!------------------ready to scale?------------------>
-    <section class="max-w-[1920px] mx-auto flex justify-center relative">
+    <section class="max-w-[1920px] mx-auto flex justify-center relative px-3">
         <div
             class="absolute 2xl:max-w-[662px] xl:max-w-[600px] lg:max-w-[430px] md:max-w-[290px] md:bottom-[-6%] lg:bottom-[-18%] sm:block hidden left-0 -z-10 xl:bottom-[-18%] 2xl:bottom-[-30%]">
             <img src="./assets/image/webp/gradient-img.webp" alt="gradient-img">
@@ -708,7 +725,7 @@
                 Are you ready
                 to scale?</h2>
             <button
-                class="font-medium text-base py-5 px-7 bg-[#3B5998] rounded-[60px] text-white flex mx-auto mb-9">Start
+                class="font-medium text-base py-5 px-7 bg-blue rounded-[60px] text-white flex mx-auto mb-9">Start
                 My Free Trial</button>
             <div
                 class="xl:max-w-[1218px] lg:max-w-[900px] md:max-w-[700px] max-w-[350px] mx-auto xl:mb-20 lg:mb-16 md:mb-10 mb-5">
@@ -719,9 +736,10 @@
 
     <!------------------Slider------------------>
     <section id="footer"
-        class="bg-[#FAF9F6] max-w-[1920px] mx-auto xl:pt-[101px] lg:pt-12 md:pt-16 sm:pt-12 pt-10 px-3 relative">
-        <div class="container 2xl:max-w-[1500px] mx-auto xl:max-w-[1500px]">
-            <div class="flex slick gap-20 xl:pb-14 md:pb-12 pb-8 transition-all duration-1000 ease-in-out">
+        class="bg-light-white px-3 max-w-[1920px] mx-auto xl:pt-[101px] lg:pt-12 md:pt-16 sm:pt-12 pt-10 relative">
+        <div class="container 2xl:max-w-[1600px] mx-auto xl:max-w-[1500px]">
+            <div
+                class="flex slick gap-20 xl:pb-14 md:pb-12 lg:pb-3 pb-8 transition-all duration-1000 ease-in-out max-w-[1310px] mx-auto">
                 <img src="./assets/image/svg/noguchi.svg" alt="nog svg" class="mr-20 max-w-[108px] h-7">
                 <img src="./assets/image/svg/airbnb.svg" alt="air svg" class="mr-20 max-w-[118px] h-9">
                 <img src="./assets/image/svg/pro-business.svg" alt="pro svg" class="mr-20 w-[149px] h-[27px]">
@@ -734,13 +752,36 @@
                 <img src="./assets/image/svg/pro-business.svg" alt="design svg" class="mr-20 w-[149px] h-[27px]">
                 <img src="./assets/image/svg/idesign.svg" alt="design svg" class="mr-20 max-w-[106px] h-7">
             </div>
+            <div
+                class="absolute max-sm:hidden left-[3.5%] max-2xl:left-0 xl:top-[12.5%] lg:top-[6.5%] md:top-[6%] max-md:hidden">
+                <button class="prev size-[42px] rounded-full items-center flex justify-center bg-[#EEEEEC]"
+                    aria-label="Previous Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0457 19.5608C11.3269 19.2795 11.4849 18.8981 11.4849 18.5003C11.4849 18.1026 11.3269 17.7211 11.0457 17.4398L3.62073 10.0148L11.0457 2.58982C11.319 2.30692 11.4702 1.92801 11.4667 1.53472C11.4633 1.14142 11.3056 0.765204 11.0275 0.487091C10.7493 0.208979 10.3731 0.0512277 9.97983 0.0478097C9.58654 0.0443917 9.20764 0.195583 8.92473 0.468821L0.439233 8.95432C0.158026 9.23561 5.35296e-05 9.61707 5.35248e-05 10.0148C5.35201e-05 10.4126 0.158026 10.794 0.439233 11.0753L8.92473 19.5608C9.20603 19.842 9.58749 20 9.98523 20C10.383 20 10.7644 19.842 11.0457 19.5608Z"
+                            fill="#3B5998" />
+                    </svg>
+                </button>
+            </div>
+            <div
+                class="absolute max-sm:hidden right-[3.5%] max-2xl:right-0 xl:top-[12.5%] lg:top-[6.5%] md:top-[6%] max-md:hidden">
+                <button class="next size-[42px] rounded-full items-center flex justify-center bg-[#EEEEEC]"
+                    aria-label="Next Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.704443 19.5608C0.423236 19.2795 0.265263 18.8981 0.265263 18.5003C0.265263 18.1026 0.423236 17.7211 0.704443 17.4398L8.12944 10.0148L0.704442 2.58982C0.431205 2.30692 0.280014 1.92801 0.283431 1.53472C0.286849 1.14142 0.444601 0.765204 0.722714 0.487092C1.00083 0.208979 1.37704 0.0512277 1.77034 0.04781C2.16364 0.0443924 2.54254 0.195584 2.82544 0.468821L11.3109 8.95432C11.5921 9.23561 11.7501 9.61707 11.7501 10.0148C11.7501 10.4126 11.5921 10.794 11.3109 11.0753L2.82544 19.5608C2.54415 19.842 2.16269 20 1.76494 20C1.3672 20 0.985735 19.842 0.704443 19.5608Z"
+                            fill="#3B5998" />
+                    </svg>
+                </button>
+            </div>
         </div>
         <div class="border-[1px] border-dashed border-[#3B5998] max-w-[1600px] mx-auto"></div>
         <div class="container">
             <div
                 class="flex xl:pt-16 lg:pt-12 md:pt-8 sm:pt-6 pt-4 justify-between md:pb-16 pb-0 max-w-[1600px] mx-auto flex-wrap max-lg:justify-center max-lg:items-center px-3">
                 <div class="w-4/12 max-lg:w-full flex max-lg:justify-center max-lg:items-center max-lg:mb-5">
-                    <img src="assets/image/webp/hero-sec-logo.webp" alt="footerlogo" class="max-w-[250px] h-[53px]">
+                    <img src="assets/image/webp/hero-sec-logo.webp" alt="footerlogo"
+                        class="max-w-[250px] h-[53px] object-contain">
                 </div>
                 <div class="w-2/12 max-lg:w-6/12 flex-col flex max-lg:items-center  max-lg:pt-8">
                     <p class="font-bold text-xl leading-6 text-black lg:pb-5 pb-3 2xl:pb-6 uppercase">company
@@ -782,7 +823,7 @@
                     <input type="email" placeholder="Enter you work email" id="email"
                         class="text-[#0A0A0D] md:py-5 py-4 pl-5 xl:w-[447px] w-[300px] max-lg:mx-auto flex border-2 max-lg:mb-5 max-sm:mb-3 xl:mb-5 border-[#E1E1FF] rounded-2xl outline-none">
                     <p
-                        class="font-light text-base leading-6 text-[#0A0A0D] max-w-[447px] lg:pt-5 pt-0 max-md:text-center">
+                        class="font-light text-base leading-6 text-[#0A0A0D] max-w-[447px] lg:pt-5 pt-0 max-lg:text-center">
                         By
                         submitting your
                         email
@@ -795,11 +836,11 @@
         </div>
         <div class="border border-dashed border-[#3B5998] md:mt-0 max-sm:mt-8"></div>
         <div class="flex justify-between max-sm:flex-col max-sm:pb-5">
-            <div class="md:pt-14 md:pb-16 max-sm:pt-4 max-sm:pb-6">
+            <div class="md:pt-14 md:pb-16 max-sm:pt-4 max-sm:pb-6 pl-3">
                 <a href="" class="leading-5 font-light text-sm max-sm:justify-center max-sm:flex">Privacy Policy •
                     Terms & Conditions</a>
             </div>
-            <div class="flex gap-5 max-sm:pt-0 md:pt-10 max-sm:justify-center">
+            <div class="flex gap-5 max-sm:pt-0 md:pt-10 max-sm:justify-center pr-3">
                 <div>
                     <a href="https://www.facebook.com/" target="_blank"><img src="./assets/image/svg/facebook.svg"
                             alt=""></a>

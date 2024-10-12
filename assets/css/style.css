@@ -1,25 +1,39 @@
-.body {
-    font-family: "thicccboi";
+* {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "thicccboi", sans-serif;
 }
 
 @font-face {
-    font-family: "thicccboi";
-    src: url("../fonts/THICCCBOI-Bold.ttf");
+    font-family: thicccboi;
+    src: url(../font/THICCCBOI-Light.ttf);
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: "thicccboi";
-    src: url("../fonts/THICCCBOI-Medium.ttf");
+    font-family: thicccboi;
+    src: url(../font/THICCCBOI-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: "thicccboi";
-    src: url("../fonts/THICCCBOI-Regular.ttf");
+    font-family: thicccboi;
+    src: url(../font/THICCCBOI-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
-    font-family: "thicccboi";
-    src: url("../fonts/THICCCBOI-SemiBold.ttf");
+    font-family: thicccboi;
+    src: url(../font/THICCCBOI-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: thicccboi;
+    src: url(../font/THICCCBOI-Bold.ttf);
+    font-weight: 700;
 }
 
 .nav-tabs {
@@ -33,6 +47,7 @@
     color: white;
     font-weight: 700;
     font-size: 22px;
+    height: 62px;
 }
 
 .tab-content .content {
@@ -123,11 +138,21 @@
     position: relative;
     display: block;
     overflow: hidden;
-    padding: 60px !important;
+    padding: 80px !important;
 }
 
 #footer .slick-dots {
     display: none !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #3B5998 !important;
+}
+
+.slick-dots li button:before {
+    opacity: .25;
+    color: #3B5998 !important;
 }
 
 .top-btn {
@@ -140,6 +165,7 @@
 .top-btn.active {
     visibility: visible;
 }
+
 
 @media(max-width:375.99px) {
     .hero-img {
