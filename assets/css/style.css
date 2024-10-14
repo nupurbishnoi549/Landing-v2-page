@@ -1,9 +1,6 @@
 * {
-    scroll-behavior: smooth;
-}
-
-* {
     font-family: "thicccboi", sans-serif;
+    scroll-behavior: smooth;
 }
 
 @font-face {
