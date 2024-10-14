@@ -38,7 +38,10 @@ body {
     cursor: pointer;
     margin-bottom: 20px;
 }
-
+.slick .slick-track {
+    display: flex;
+    gap: 40px;
+}
 .tab.active {
     background: #3B5998;
     color: white;
