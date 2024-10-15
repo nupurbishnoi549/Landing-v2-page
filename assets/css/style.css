@@ -133,7 +133,25 @@ body {
     border-radius: 48px 48px 0px 0px !important;
     background-color: #3B5998;
 }
+.color-blue {
+    color: #3B5998;
+}
 
+.bg-blue {
+    background: #3B5998;
+}
+
+.color-gray {
+    color: #7D889E;
+}
+
+.bg-light-white {
+    background: #FAF9F6;
+}
+
+.color-light-white {
+    color: #FAF9F6;
+}
 #business .slick-list {
     position: relative;
     display: block;
